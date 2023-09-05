@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login Page</title>
+  </head>
+  <body class="bg-slate-300">
+    <div
+      class="bg-slate-50 flex flex-col justify-center items-center my-28 mx-10 rounded-md shadow-md md:my-36 md:mx-36 lg:mx-96 lg:my-20"
+    >
+      <form id="loginForm">
+        <div class="flex justify-center">
+          <h1 class="text-2xl font-bold text-blue-400 py-3.5">LOGIN</h1>
+        </div>
+        <div class="flex flex-col">
+          <label for="uname" class="text-lg">Username</label>
+          <input
+            type="text"
+            name="uname"
+            id="username"
+            placeholder="Masukan Username"
+            class="border rounded-md pl-3.5 py-3.5 mb-3.5"
+          />
+          <label for="pwd" class="text-lg">Password</label>
+          <input
+            type="password"
+            name="pwd"
+            id="password"
+            placeholder="Masukan Password"
+            class="border rounded-md pl-3.5 py-3.5 mb-3.5"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label for="" class="my-3.5">
+            <input type="checkbox" name="remember" id="remember" /> Remember Me
+          </label>
+          <button
+            type="submit"
+            id="btnLogin"
+            class="bg-blue-400 hover:bg-blue-500 rounded-md px-10 py-2.5 text-white mb-3.5"
+          >
+            Login
+          </button>
+        </div>
+        <a href="./components/register.html" for="" class="flex mb-10">
+          <p class="pr-2">Belum memiliki akun?</p>
+          <p class="font-bold hover:underline">Sign Up</p>
+        </a>
+      </form>
+    </div>
+  </body>
+</html>
+<script src="../js/login.js"></script>
